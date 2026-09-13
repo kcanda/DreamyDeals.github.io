@@ -1,0 +1,103 @@
+<!-- DreamyDeals Artists page -->
+<!-- Kirsten Canda -->
+<!-- An example of an artists page on DreamyDeals website for IVE -->
+<!-- Ver 2.1.7 -->
+<!-- Created on 19/7/2023 -->
+<!DOCTYPE html>
+<html>
+
+<!-- Title of website, website icon, metadata and CSS-->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="DreamyDeals Website - IVE">
+    <meta name="keywords" content="HTML, CSS, JavaScript">
+    <meta name="author" content="Kirsten Canda">
+
+
+    <title>DreamyDeals - IVE</title>
+    <link rel="icon" type="image/x-icon" href="mascot.png">
+    <link rel="stylesheet" href="mystyle.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<!-- Style for changing the homepage font, background image and HTML link colours-->
+<style>
+    a:link {
+        color: black;
+        background-color: transparent;
+        text-decoration: none;
+    }
+
+    a:visited {
+        color: black;
+        background-color: transparent;
+        text-decoration: none;
+    }
+
+    a:hover {
+        color: #e1c4ff;
+        background-color: transparent;
+        text-decoration: underline;
+    }
+
+    a:active {
+        color: black;
+        background-color: transparent;
+        text-decoration: underline;
+    }
+
+    /* footer CSS from https://www.geeksforgeeks.org/how-to-create-footer-to-stay-at-the-bottom-of-a-web-page/*/
+    #footer {
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        height: 20px;
+        /* Height of the footer */
+        background: #e1c4ff;
+    }
+
+    /* IVE background image*/
+    body {
+        background-image: url(ivebanner.png);
+    }
+</style>
+
+<body style="background-color:#A0A0A0;">
+    <div class="container">
+        <div class="image">
+            <p>
+                <a href="index.html">
+                    <img src="logo.png" alt="DreamyDeals Logo">
+                </a>
+            <p>
+        </div>
+        <!-- Navigation bar -->
+        <nav>
+            <a href="artistsselection.html">Artists</a> |
+            <a href="bestselling.html">Best Selling</a> |
+            <a href="newreleases.html">New Releases</a> |
+        </nav>
+    </div>
+
+    <!-- Search bar from https://www.w3schools.com/howto/howto_css_searchbar.asp-->
+    <div class="topnav">
+        <div class="search-container">
+            <form action="IVE.html">
+                <input type="text" placeholder="Search.." name="search">
+                <button type="submit"><i class="fa fa-search"></i></button>
+            </form>
+        </div>
+    </div>
+    <br>
+
+    <h1>IVE</h1>
+    <a href="lovedive.html">
+        <img src="lovedive.png" alt="IVE - Love Dive" width="200" height="200">
+    </a>
+
+</body>
+<div id="footer">Author: Kirsten Canda
+</div>
+
+</html>

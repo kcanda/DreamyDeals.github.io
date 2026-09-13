@@ -1,0 +1,107 @@
+<!-- DreamyDeals Artists page -->
+<!-- Kirsten Canda -->
+<!-- An example of an artists page on DreamyDeals website for LE SSERAFIM -->
+<!-- Ver 1.1 -->
+<!-- Created on 30/7/2023 -->
+<!doctype html>
+<html>
+  <!-- Title of website, website icon, metadata and CSS-->
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="DreamyDeals Website - LE SSERAFIM" />
+    <meta name="keywords" content="HTML, CSS, JavaScript" />
+    <meta name="author" content="Kirsten Canda" />
+
+    <title>DreamyDeals - LESSERAFIM</title>
+    <link rel="icon" type="image/x-icon" href="mascot.png" />
+    <link rel="stylesheet" href="mystyle.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  </head>
+
+  <!-- Style for changing the homepage font, background image and HTML link colours-->
+  <style>
+    a:link {
+      color: black;
+      background-color: transparent;
+      text-decoration: none;
+    }
+
+    a:visited {
+      color: black;
+      background-color: transparent;
+      text-decoration: none;
+    }
+
+    a:hover {
+      color: #e1c4ff;
+      background-color: transparent;
+      text-decoration: underline;
+    }
+
+    a:active {
+      color: black;
+      background-color: transparent;
+      text-decoration: underline;
+    }
+
+    /* footer CSS from https://www.geeksforgeeks.org/how-to-create-footer-to-stay-at-the-bottom-of-a-web-page/*/
+    #footer {
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+      height: 20px;
+      /* Height of the footer */
+      background: #e1c4ff;
+    }
+
+    /* LESSERAFIM background image*/
+    body {
+      background-image: url(lesserafimbackground.png);
+      height: 100%;
+      background-position: top;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+  </style>
+
+  <body style="background-color: #a0a0a0">
+    <div class="container">
+      <div class="image">
+        <p>
+          <a href="index.html">
+            <img src="logo.png" alt="DreamyDeals Logo" />
+          </a>
+        </p>
+
+        <p></p>
+      </div>
+      <!-- Navigation bar -->
+      <nav>
+        <a href="artistsselection.html">Artists</a> |
+        <a href="bestselling.html">Best Selling</a> |
+        <a href="newreleases.html">New Releases</a> |
+      </nav>
+    </div>
+
+    <!-- Search bar from https://www.w3schools.com/howto/howto_css_searchbar.asp-->
+    <div class="topnav">
+      <div class="search-container">
+        <form action="IVE.html">
+          <input type="text" placeholder="Search.." name="search" />
+          <button type="submit"><i class="fa fa-search"></i></button>
+        </form>
+      </div>
+    </div>
+    <br />
+
+    <h1>LE SSERAFIM</h1>
+    <img
+      src="unforgiven.jpg"
+      alt="UNFORGIVEN - LE SSERAFIM"
+      width="200"
+      height="200"
+    />
+  </body>
+  <div id="footer">Author: Kirsten Canda</div>
+</html>

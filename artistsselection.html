@@ -1,0 +1,126 @@
+<!-- DreamyDeals Artists page -->
+<!-- Kirsten Canda -->
+<!-- Artists page to filter products for DreamyDeals website -->
+<!-- Ver 2.1.7 -->
+<!-- Created on 21/6/2023 -->
+<!DOCTYPE html>
+<html>
+
+<!-- Title of website, website icon, metadata and CSS-->
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="DreamyDeals Website - Artists Selection">
+  <meta name="keywords" content="HTML, CSS, JavaScript">
+  <meta name="author" content="Kirsten Canda">
+
+  <title>DreamyDeals - Artists</title>
+  <link rel="icon" type="image/x-icon" href="mascot.png">
+  <link rel="stylesheet" href="mystyle.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<!-- Style for changing the homepage font, background image and HTML link colours-->
+<style>
+  a:link {
+    color: black;
+    background-color: transparent;
+    text-decoration: none;
+  }
+
+  a:visited {
+    color: black;
+    background-color: transparent;
+    text-decoration: none;
+  }
+
+  a:hover {
+    color: #e1c4ff;
+    background-color: transparent;
+    text-decoration: underline;
+  }
+
+  a:active {
+    color: black;
+    background-color: transparent;
+    text-decoration: underline;
+  }
+
+  /* footer CSS from https://www.geeksforgeeks.org/how-to-create-footer-to-stay-at-the-bottom-of-a-web-page/*/
+  #footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 20px;
+    /* Height of the footer */
+    background: #e1c4ff;
+  }
+</style>
+
+<body style="background-color:#A0A0A0;">
+  <div class="container">
+    <div class="image">
+      <p>
+        <a href="index.html">
+          <img src="logo.png" alt="DreamyDeals Logo">
+        </a>
+      <p>
+    </div>
+    <!-- Navigation bar -->
+    <nav>
+      <a href="artistsselection.html">Artists</a> |
+      <a href="bestselling.html">Best Selling</a> |
+      <a href="newreleases.html">New Releases</a> |
+    </nav>
+  </div>
+
+  <!-- Search bar from https://www.w3schools.com/howto/howto_css_searchbar.asp-->
+  <div class="topnav">
+    <div class="search-container">
+      <form action="IVE.html">
+        <input type="text" placeholder="Search.." name="search">
+        <button type="submit"><i class="fa fa-search"></i></button>
+      </form>
+    </div>
+  </div>
+  <br>
+
+  <!-- Dropdown search/selection for Kpop artists (original code from https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_js_dropdown_filter)-->
+  <h1>Choose Kpop artist</h1>
+  <!-- Javascript for dropdown-->
+  <script>
+    function myFunction() {
+      document.getElementById("myDropdown").classList.toggle("show");
+    }
+
+    function filterFunction() {
+      var input, filter, ul, li, a, i;
+      input = document.getElementById("myInput");
+      filter = input.value.toUpperCase();
+      div = document.getElementById("myDropdown");
+      a = div.getElementsByTagName("a");
+      for (i = 0; i < a.length; i++) {
+        txtValue = a[i].textContent || a[i].innerText;
+        if (txtValue.toUpperCase().indexOf(filter) > -1) {
+          a[i].style.display = "";
+        } else {
+          a[i].style.display = "none";
+        }
+      }
+    }
+  </script>
+  <br>
+  <div class="dropdown">
+    <button onclick="myFunction()" class="dropbtn">Kpop Artists</button>
+    <div id="myDropdown" class="dropdown-content">
+      <input type="text" placeholder="Search.." id="myInput" onkeyup="filterFunction()">
+      <a href="IVE.html">IVE</a>
+      <a href="LESSERAFIM.html">LE SSERAFIM</a>
+    </div>
+  </div>
+
+</body>
+<div id="footer">Author: Kirsten Canda
+</div>
+
+</html>

@@ -1,0 +1,201 @@
+<!-- DreamyDeals Love Dive Product Page -->
+<!-- Kirsten Canda -->
+<!-- An example of a product page for DreamyDeals website -->
+<!-- Ver 2.1.8 -->
+<!-- Created on 22/6/2023 -->
+<!DOCTYPE html>
+<html>
+
+<!-- Title of website, website icon, metadata and CSS-->
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="DreamyDeals Website - Love Dive Product Page">
+  <meta name="keywords" content="HTML, CSS, JavaScript">
+  <meta name="author" content="Kirsten Canda">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+  <title>DreamyDeals - Love Dive</title>
+  <link rel="icon" type="image/x-icon" href="mascot.png">
+  <link rel="stylesheet" href="mystyle.css">
+
+  <!-- Style for changing the homepage font, background image and HTML link colours-->
+  <style>
+    a:link {
+      color: black;
+      background-color: transparent;
+      text-decoration: none;
+    }
+
+    a:visited {
+      color: black;
+      background-color: transparent;
+      text-decoration: none;
+    }
+
+    a:hover {
+      color: #e1c4ff;
+      background-color: transparent;
+      text-decoration: underline;
+    }
+
+    a:active {
+      color: black;
+      background-color: transparent;
+      text-decoration: underline;
+    }
+
+    /* footer CSS from https://www.geeksforgeeks.org/how-to-create-footer-to-stay-at-the-bottom-of-a-web-page/*/
+    #footer {
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+      height: 20px;
+      /* Height of the footer */
+      background: #e1c4ff;
+    }
+
+    .slideshow-container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .price {
+      font-size: 20px;
+      padding-left: 20px;
+    }
+  </style>
+
+  <!-- Javascript from https://www.w3schools.com/howto/howto_js_slideshow.asp -->
+  <script>
+    let slideIndex = 1;
+    showSlides(slideIndex);
+
+    // Next/previous controls
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+
+    // Thumbnail image controls
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+
+    function showSlides(n) {
+      let i;
+      let slides = document.getElementsByClassName("mySlides");
+      let dots = document.getElementsByClassName("dot");
+      if (n > slides.length) { slideIndex = 0 }
+      if (n < 1) { slideIndex = slides.length }
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex - 1].style.display = "block";
+      dots[slideIndex - 1].className += " active";
+    }
+  </script>
+</head>
+
+<!--Pyscript to allow Python scraping in HTML page-->
+<link rel="stylesheet" href="https://pyscript.net/latest/pyscript.css" />
+<script defer src="https://pyscript.net/latest/pyscript.js"></script>
+
+<!-- Logo and navigation bar -->
+
+<body style="background-color:#A0A0A0;">
+  <div class="container">
+    <div class="image">
+      <p>
+        <a href="index.html">
+          <img src="logo.png" alt="DreamyDeals Logo">
+        </a>
+      <p>
+    </div>
+    <!-- Navigation bar -->
+    <nav>
+      <a href="artistsselection.html">Artists</a> |
+      <a href="bestselling.html">Best Selling</a> |
+      <a href="newreleases.html">New Releases</a> |
+    </nav>
+  </div>
+
+  <!-- Search bar from https://www.w3schools.com/howto/howto_css_searchbar.asp-->
+  <div class="topnav">
+    <div class="search-container">
+      <form action="IVE.html">
+        <input type="text" placeholder="Search.." name="search">
+        <button type="submit"><i class="fa fa-search"></i></button>
+      </form>
+    </div>
+  </div>
+  <br>
+
+
+
+  <aside>
+    <!-- Slideshow container from https://www.w3schools.com/howto/howto_js_slideshow.asp -->
+    <div class="slideshow-container">
+
+      <!-- Full-width images with number and caption text -->
+      <div class="mySlides fade">
+        <div class="numbertext">1 / 3</div>
+        <img src="lovedive.png" style="width:100%">
+        <div class="text">Love Dive - IVE</div>
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext">2 / 3</div>
+        <img src="lovediveinclusions.jpg" style="width:100%">
+        <div class="text">Love Dive - IVE Versions</div>
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext">3 / 3</div>
+        <img src="lovedive3.png" style="width:100%">
+        <div class="text">Love Dive - IVE Inclusions</div>
+      </div>
+
+      <!-- Next and previous buttons -->
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+    <br>
+  </aside>
+
+  <!-- The dots/circles -->
+  <div style="text-align:center">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+  </div>
+  </div>
+
+  <!-- Placeholders for price comparisons -->
+  <div class="price">
+    <h1>Love Dive - IVE</h1>
+    <h2>Stores Available</h2>
+    <a href="https://kpoptime.com.au/products/ive-love-dive-random-of-3-versions?_pos=1&_sid=d36ae3aea&_ss=r">Kpop
+      Time
+      - $38.95 without shipping</a>
+    <br>
+    <a href="https://iheartkpopaus.com.au/products/pre-order-ive-love-dive-2nd-single-album">I Heart Kpop - $43.95
+      without shipping</a>
+  </div>
+<br>
+
+  <!-- Python code for scraping *did not work*-->
+  <section class="pyscript">
+    <py-script>
+    </py-script>
+  </section>
+
+</body>
+<div id="footer">Author: Kirsten Canda
+</div>
+
+</html>
